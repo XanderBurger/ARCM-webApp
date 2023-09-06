@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.sketch{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0px; left:0px;
+  z-index: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  position: relative;
+  z-index: 1;
+  padding-left: 50px;
+  margin-top: 50px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-size: 55px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lowerHeader{
+  position: relative;
+  z-index: 1;
+  padding-left: 50px;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-size: 55px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.spacer{
+  height: 400px;
+}
+
+.link{
+  text-decoration: underline;
   color: white;
+  font-size: 25px;
+  padding-left: 25px;
+}
+.link:hover{
+  text-decoration: underline;
+  color: #894F9F;
+  font-size: 25px;
+  padding-left: 25px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+  position: relative;
+  z-index: 1;
+  width: auto;
 }
