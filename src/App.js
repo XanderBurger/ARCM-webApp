@@ -11,7 +11,7 @@ function App() {
       </div>
       <div className='spacer'></div>
       <h1 className='lowerHeader'>
-        @ the AMRC
+        @ the ACRM
         <a href="https://acrmuseum.org/" className='link'>Plan your visit</a>
       </h1>
       <image src={logo} alt="logo" className='logo'/>
