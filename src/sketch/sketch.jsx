@@ -1,10 +1,16 @@
 import React from "react";
 import {ReactP5Wrapper} from '@p5-wrapper/react'
+import Satoshi from '../fonts/Satoshi-Variable.ttf'
 
 function sketch(p5) {
+    
+    p5.preload = () => {
+        const satoshi = p5.loadFont(Satoshi)
+    }
 
     p5.setup = () => {
         p5.createCanvas(p5.windowWidth, p5.windowHeight)
+        p5.filter(p5.BLUR, 3)
     };
 
     p5.draw = () => {
