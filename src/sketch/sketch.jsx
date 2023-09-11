@@ -11,7 +11,6 @@ function sketch(p5) {
     let title = "Computer"
     let colors = ["#FFFFFF", "#F22F66", "#FC5F1A", "#FFE027", "#80D860", "#3263ED"]
     let words = ["COMPUTERS", "ROBOTS", "MACS", "ENIGMA", "QUANTUM", "AI", "PROGRESS"]
-    let colorNum = 0
     let textSize = 200
 
     function drawLetter(letter,x,y, colorNum, sampleFactor, squareSize) {
