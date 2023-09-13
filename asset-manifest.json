@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ARCM-webApp/static/css/main.83ec6cbc.css",
-    "main.js": "/ARCM-webApp/static/js/main.167fcb7b.js",
+    "main.js": "/ARCM-webApp/static/js/main.2cdc5f2b.js",
     "static/media/Satoshi-Variable.ttf": "/ARCM-webApp/static/media/Satoshi-Variable.536fda9b164542087fc7.ttf",
     "static/media/ACRM-white.png": "/ARCM-webApp/static/media/ACRM-white.efea893c49479bb38b4b.png",
     "index.html": "/ARCM-webApp/index.html",
     "main.83ec6cbc.css.map": "/ARCM-webApp/static/css/main.83ec6cbc.css.map",
-    "main.167fcb7b.js.map": "/ARCM-webApp/static/js/main.167fcb7b.js.map"
+    "main.2cdc5f2b.js.map": "/ARCM-webApp/static/js/main.2cdc5f2b.js.map"
   },
   "entrypoints": [
     "static/css/main.83ec6cbc.css",
-    "static/js/main.167fcb7b.js"
+    "static/js/main.2cdc5f2b.js"
   ]
 }
