@@ -10,7 +10,7 @@ function sketch(p5) {
     let canvasHeight = p5.windowHeight
     let title = "Computer"
     let colors = ["#FFFFFF", "#F22F66", "#FC5F1A", "#FFE027", "#80D860", "#3263ED"]
-    let words = ["COMPUTERS", "ROBOTS", "MACS", "ENIGMA", "QUANTUM", "AI", "PROGRESS"]
+    let words = ["COMPUTERS", "ROBOTS", "MACS", "ENIGMA", "QUANTUM", "AI","APOLLO","PROGRESS"] //
     let textSize = 200
 
     function drawLetter(letter,x,y, colorNum, sampleFactor, squareSize) {
@@ -40,27 +40,31 @@ function sketch(p5) {
     let count = 0
     let w = 0
     let y = 450
+    let canSwitch = true
     p5.draw = () => {
         p5.background("#000000");
         p5.textFont(satoshi)
         p5.textSize(textSize)
         count++
-        sizeX += Math.cos(count/30) 
-        sizeY += Math.sin(count/30) 
-        if (Math.cos(count/30) < -0.999){
+        sizeX += Math.cos(count/25) 
+        sizeY += Math.sin(count/25) 
+        
+        if (Math.cos(count/25) * 180/Math.PI < -56 && canSwitch){
             w = (w + 1) % words.length
+            canSwitch = false
+        }if (Math.cos(count/25) * 180/Math.PI > 56){
+            canSwitch = true
         }
         title = words[w]
-
         let squareSize = {x: sizeX, y: sizeY}
         let x = 52
         for (let i = 0; i < title.length; i++) {
-            drawLetter(title[i],x, y, 3, 0.2, squareSize)
+            drawLetter(title[i],x, y, 4, 0.2, squareSize)
             x += p5.textWidth(title[i])
         }
         x = 48
         for (let i = 0; i < title.length; i++) {
-            drawLetter(title[i],x, y, 1, 0.2, squareSize)
+            drawLetter(title[i],x, y,1, 0.2, squareSize)
             x += p5.textWidth(title[i])
         }
         x= 50
